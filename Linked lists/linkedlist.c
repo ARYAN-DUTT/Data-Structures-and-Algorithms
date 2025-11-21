@@ -70,6 +70,22 @@ void print_LL(struct node *start)
         ptr=ptr->next;
     }
 }
+
+struct node* reverse(struct node *start){
+  struct node *prev = NULL;
+  struct node *curr = start;
+  struct node *agla = start->next;
+  while(curr!=NULL){
+    curr->next=prev;
+    prev=curr;
+    curr=agla;
+    if(agla==NULL){
+      break;
+    }
+    agla = agla->next;
+  }
+  return prev;
+}
 int main()
 {
    struct node *start=NULL;
@@ -80,8 +96,9 @@ int main()
        start=insert_beg(start,val);
         scanf("%d",&val);
    }
-   start = delete_beg(start);
-   delete_end(start);
+   //start = delete_beg(start);
+   //delete_end(start);
+   start = reverse(start);
    print_LL(start);
     return 0;
 }

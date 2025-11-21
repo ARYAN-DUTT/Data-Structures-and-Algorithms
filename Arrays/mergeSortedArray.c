@@ -31,3 +31,6 @@ int main(){
     printf("%d ",a3[z]);
   }
 }
+
+
+
