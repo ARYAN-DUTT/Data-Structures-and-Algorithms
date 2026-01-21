@@ -5,11 +5,12 @@ int fib(int n){
     return 0;
   if(n==1)
     return 1;
-  return fib(n-1) + fib(n-2);
+  int x =  fib(n-1) + fib(n-2);
+  return x;
 }
 
 int main(){
-  for(int i=0; i<5; i++){
+  for(int i=0; i<17; i++){
     cout<<fib(i)<<" ";
   }
   return 0;

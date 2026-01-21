@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <stdbool.h> // needed for boolean type
+#include <stdbool.h>
+// needed for boolean type
 //#define max_cap 50;
 int max_cap;
 int top=-1;

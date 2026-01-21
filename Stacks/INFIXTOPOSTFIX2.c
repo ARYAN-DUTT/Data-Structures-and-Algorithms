@@ -5,7 +5,7 @@ int main(){
   char infix[50], postfix[50], stk[50];
   int top = -1, j = 0;
   printf("Enter infix expression: ");
-  scanf("%s", infix);
+  scanf("%s", infix);  //(a + b) * c
   int prec;
   for(int i=0; infix[i]!='\0'; i++){
     char ch = infix[i];

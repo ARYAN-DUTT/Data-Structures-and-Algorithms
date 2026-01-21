@@ -60,7 +60,8 @@ int main()
    scanf("%d",&val);//10
    while(val!=-1)
    {
-       start=insert_beg(start,val);//insert_beg(NULL,10)
+       start=insert_beg(start,val);
+       //insert_beg(NULL,10)
         scanf("%d",&val);
    }
    print_LL(start);
